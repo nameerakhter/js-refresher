@@ -74,7 +74,7 @@ _Write the math or parsing syntax to solve these problems._
 
 ## Section 4: Arrays & Iteration
 
-_Manipulate the array data structures using explicit methods._
+_Manipulate the array data structures._
 
 47. Add the element `"orange"` to the end of the array `["apple", "banana"]`.
 48. Remove the last element from an array using an array method.
@@ -130,8 +130,6 @@ _Perform CRUD and operational changes on JavaScript objects._
 ---
 
 ## Section 6: Control Flow, Loops & Logic Syntax
-
-_Write structural blocks that control code execution paths._
 
 90. Write a traditional `for` loop that runs exactly 5 times (tracking an index from 0 to 4).
 91. Write a `while` loop that increments a counter and runs exactly 3 times.

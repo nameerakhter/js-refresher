@@ -1,15 +1,31 @@
 # js-refresher
 
-To install dependencies:
+1. Clone the repository:
 
 ```bash
-bun install
+git clone https://github.com/nameerakhter/js-refresher.git
+cd js-refresher
 ```
 
-To run:
+2. Create a new branch for your work:
 
 ```bash
-bun run index.ts
+git checkout -b add-practice-solutions
 ```
 
-This project was created using `bun init` in bun v1.3.12. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+3. Open `PRACTICE.md` and add your solutions.
+
+4. Commit your changes:
+
+```bash
+git add solutions.js
+git commit -m "Add solutions for PRACTICE.md"
+```
+
+5. Push your branch:
+
+```bash
+git push -u origin add-practice-solutions
+```
+
+6. Open a Pull Request from your branch to `main`, and in the PR description mention which `PRACTICE.md` questions you solved.
