@@ -1,7 +1,9 @@
+# Instructions
+
 1. Clone this repository or copy this file.
 2. Create a file named `solutions.js` (and `solutions.html` for the HTML section).
 3. Write out the practical code for each task sequentially.
-4. Run your JavaScript code using `node ` in your terminal to ensure it executes without syntax errors.
+4. Run your JavaScript code using `node ` and console.logs to check the output in your terminal.
 
 ## Section 1: Developer Environment & HTML Emmet Shortcuts
 
