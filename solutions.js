@@ -315,3 +315,87 @@ console.log(arr)
 arr.reverse()
 console.log(arr)
 console.log("\n")
+
+//Q56Sort the array ["zebra", "apple", "mango"] alphabetically.
+arr = ["zebra", "apple", "mango"]
+arr.sort();
+console.log(arr)
+
+console.log("\n")
+
+arr1=[1,2]
+arr=[3,4]
+arr=arr1.concat(arr);
+console.log(arr);
+console.log('\n')
+
+
+let originalArr=[1,2,3,4,5]
+let newArr= originalArr.slice(0);
+console.log(originalArr)
+console.log(newArr)
+console.log('\n')
+
+//Q60
+originalArr=[10,20,30,40,50]
+newArr = originalArr.slice(1,3)
+console.log(originalArr)
+console.log(newArr)
+console.log('\n')
+
+
+ originalArr = ["a", "b", "c", "d"]
+newArr = originalArr.splice(1,2)
+console.log(originalArr)
+console.log(newArr)
+console.log('\n')
+
+arr=[1,2,3,4]
+console.log(arr)
+arr.splice(2,0,"x","y")
+console.log(arr)
+console.log('\n')
+
+
+arr =[1,2,3]
+newArr = arr.map(num => num*2)
+console.log(arr)
+console.log(newArr)
+console.log('\n')
+
+arr=[5, 12, 8, 15, 3]
+newArr = arr.filter(num => num>10)
+console.log(arr)
+console.log(newArr)
+console.log('\n')
+
+arr=[1,2,3,4]
+let sum =arr.reduce((sum,num)=> sum+num,0)
+console.log(arr)
+console.log(sum)
+console.log('\n')
+
+arr = [4, -2, 5, -9]
+sum = arr.find(num => num<0)
+console.log(arr)
+console.log(sum)
+console.log('\n')
+
+arr = [4, -2, 5, -9]
+sum = arr.findIndex(num => num<0)
+console.log(arr)
+console.log(sum)
+console.log('\n')
+
+arr = [4, -2, 5, -9,10]
+sum = arr.some(num => num%2 ===0)
+console.log(arr)
+console.log(sum)
+console.log('\n')
+
+// Q70  Flatten the nested array [1, [2, 3], [4, 5]] into a flat, single-level array.
+arr=[1, [2, 3], [4, 5]]
+newArr = arr.flat()
+console.log(arr)
+console.log(newArr)
+console.log('\n')
