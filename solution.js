@@ -326,7 +326,7 @@ let result = arr.filter(function(num){
     return num >10
 })
 console.log(result);
-*/
+
 // 65.Use .reduce() to sum up all the numbers in the array [1, 2, 3, 4].
 let arr = [1, 2, 3, 4];
 let result = arr.reduce(function(total,num){
@@ -334,3 +334,296 @@ let result = arr.reduce(function(total,num){
 });
 console.log(result)
 
+//66. Use .find() to locate the first number that is less than 0 in the array [4, -2, 5, -9].
+let arr =  [4, -2, 5, -9];
+let result = arr.find(function(num){
+    return num>0
+
+})
+console.log(result)
+
+//67.Use .findIndex() to get the index of the first negative number found in [4, -2, 5].
+let arr = [4, -2, 5]
+let result = arr.findIndex(function(num){
+    return num<0;
+
+});
+console.log(result)
+
+//68. Use .every() to confirm if ALL numbers in the array [2, 4, 6] are even.
+let arr = [2, 4, 6]
+let even = arr.every(function(num){
+    return num % 2 === 0
+
+});
+console.log(even)
+
+//69. Use .some() to check if at least ONE number in the array [1, 3, 6, 7] is even
+let arr = [1, 3, 6, 7] 
+let result = arr.some(function(num){
+return num % 2 === 0;
+});
+console.log(result)
+
+//70. Flatten the nested array [1, [2, 3], [4, 5]] into a flat, single-level array.
+let arr = [1, [2, 3], [4, 5]];
+let result = arr.flat();
+console.log(result)
+
+//71. Clear all items from an array named tempArr by changing its .length property directly.
+let tempArr = [1, 2, 3, 4, 5]
+tempArr.length = 0;
+console.log(tempArr);
+
+// 72.Create a 5-element array filled entirely with the number 0 using an array method sequence.
+let arr = Array(5).fill(0)
+console.log(arr)
+
+// 73.Loop through an array ["a", "b", "c"] and log each item out using the .forEach() method.
+let arr = ["a", "b", "c"];
+arr.forEach(function(str){
+    console.log(str)
+});
+
+//74. Convert the string "HELLO" into a true structural array of individual characters ['H', 'E', 'L', 'L', 'O'].
+let str = "HELLO";
+let result = str.split("");
+console.log(result);
+
+//75. Given const intern = { name: "Alex", role: "Developer" };, access name using dot notation.
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+
+console.log(intern.name);
+
+//76.Access the property role from that same object using dynamic bracket notation instead.
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+console.log(intern["role"]);
+
+// 77. Add a new property age with a value of 22 to the intern object.
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+intern.age = 22;
+console.log(intern);
+
+// 78.Update the property role inside the object to read "Junior Developer".
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+intern.role = "Junior Developer";
+console.log(intern);
+
+//79. Delete the property role completely from the intern object.
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+delete intern.role;
+console.log(intern);
+
+// 80. Write a statement to check if the property "status" exists inside the object using the in operator
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+let result = "status" in intern;
+console.log(result);
+
+//81. Write a statement to check if the object has the property "name" using hasOwnProperty().
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+let result = intern.hasOwnProperty("name");
+console.log(result);
+
+// 82.Generate an array containing all the keys of the object.
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+let keys = Object.keys(intern);
+console.log(keys);
+
+// 83. Generate an array containing all the values of the object.
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+let values = Object.values(intern);
+console.log(values);
+
+//84.Generate an array of key-value pair arrays from the object.
+const intern = {
+    name: "Alex",
+    role: "Developer"
+};
+let entries = Object.entries(intern);
+console.log(entries);
+
+//85. Merge two objects const obj1 = { a: 1 }; and const obj2 = { b: 2 }; using Object.assign()
+const obj1 = { a: 1 };
+const obj2 = { b: 2 };
+let result = Object.assign({}, obj1, obj2);
+console.log(result);
+
+//86.Merge those same two objects obj1 and obj2 using the Object Spread operator.
+const obj1 = { a: 1 };
+const obj2 = { b: 2 };
+
+let result = { ...obj1, ...obj2 };
+
+console.log(result);
+
+// 87. Seal an object named sealedObj so properties cannot be added or deleted, but values can change.
+const sealedObj = {
+    name: "Alex",
+    role: "Developer"
+};
+
+Object.seal(sealedObj);
+
+sealedObj.role = "Junior Developer"; // ✅ allowed
+
+console.log(sealedObj);
+
+//88. Freeze an object named frozenObj entirely so no modifications can happen.
+  const frozenObj = {
+    name: "Alex",
+    role: "Developer"
+};
+Object.freeze(frozenObj);
+console.log(frozenObj);
+
+// 89.Destructure the properties name and age out of the object const user = { name: "John", age: 25 }; into standalone variables.
+const user = {
+    name: "John",
+    age: 25
+};
+const { name, age } = user;
+console.log(name);
+console.log(age);
+
+//90.Write a traditional for loop that runs exactly 5 times (tracking an index from 0 to 4).
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+    
+//91. Write a while loop that increments a counter and runs exactly 3 times.
+let count = 0;
+
+while (count < 3) {
+    console.log(count);
+    count++;
+}
+    
+// 92.Write a do...while loop structure.
+let count = 0;
+
+do {
+    console.log(count);
+    count++;
+} while (count < 3);
+ 
+//93. Iterate over the elements of the array ["apple", "pear"] using a for...of loop.
+let fruits = ["apple", "pear"];
+
+for (const fruit of fruits) {
+    console.log(fruit);
+}
+    
+//94.Iterate over the keys of the object { item: "book", price: 15 } using a for...in loop.
+const product = {
+    item: "book",
+    price: 15
+};
+
+for (const key in product) {
+    console.log(key);
+}
+    
+//95. Write a standard if-else statement that logs "Positive" if a number is >= 0, and "Negative" otherwise.
+let num = 5;
+
+if (num >= 0) {
+    console.log("Positive");
+} else {
+    console.log("Negative");
+}
+    
+//96 Convert that if-else block into a compact, single-line conditional Ternary operator expression.
+let num = 5;
+
+if (num >= 0) {
+    console.log("Positive");
+} else {
+    console.log("Negative");
+}
+    
+// 97. Write a switch statement evaluating a variable color for the cases "red" and "blue".
+let color = "red";
+
+switch (color) {
+    case "red":
+        console.log("Color is Red");
+        break;
+
+    case "blue":
+        console.log("Color is Blue");
+        break;
+}
+        
+//98. Use the break keyword inside a loop to stop execution the moment an index counter reaches 3
+for (let i = 0; i < 10; i++) {
+    if (i === 3) {
+        break;
+    }
+
+    console.log(i);
+}
+    
+// 99. Use the continue keyword inside a loop to skip all code execution for index 2 and move directly to the next iteration loop
+for (let i = 0; i < 5; i++) {
+    if (i === 2) {
+        continue;
+    }
+
+    console.log(i);
+}
+    
+// 100.Write a traditional function declaration named add that returns the sum of parameters a and b
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 3));
+
+//101. Convert that traditional add function into an ES6 Arrow Function assigned to a variable.
+const add = (a, b) => a + b;
+
+console.log(add(5, 3));
+
+//102.Define a function parameter signature that provides a default string value of "Guest" if no argument is supplied.
+function greet(name = "Guest") {
+    console.log(name);
+}
+    
+// 103. Use the Logical Nullish Coalescing operator (??) to fallback to "default-string" if a variable is null or undefined.
+let value = null;
+
+let result = value ?? "default-string";
+
+console.log(result);
+*/
+//104. Use Optional Chaining (?.) to safely log user.profile.bio without throwing an error if profile is missing.
+const user = {};
+
+console.log(user.profile?.bio);
