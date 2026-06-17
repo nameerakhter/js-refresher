@@ -298,5 +298,39 @@ let copyArr = originalArr.slice();
 copyArr.push(4);
 console.log(originalArr);
 console.log(copyArr);
-*/
+
 //60 Extract elements at index 1 and index 2 from [10, 20, 30, 40, 50] into a new array.
+let arr = [10, 20, 30, 40, 50]
+let result = arr.slice(1,3)
+console.log(result)
+
+//61 Remove 2 elements starting exactly from index 1 in the array ["a", "b", "c", "d"].
+let arr =  ["a", "b", "c", "d"]
+let result = arr.splice(1,2)
+console.log(result)
+
+//62 Insert the elements "x" and "y" at index 2 without removing anything from [1, 2, 3, 4].
+let arr =  [1, 2, 3, 4]
+arr.splice(2,0,"x","y")
+console.log(arr)
+
+//63 Use .map() to multiply every single number in the array [1, 2, 3] by 2.
+let arr = [1, 2, 3];
+let result = arr.map(function(num){
+    return num*2;
+});
+
+//64.Use .filter() to strip out and keep only numbers greater than 10 in [5, 12, 8, 15, 3]
+let arr = [5, 12, 8, 15, 3]
+let result = arr.filter(function(num){
+    return num >10
+})
+console.log(result);
+*/
+// 65.Use .reduce() to sum up all the numbers in the array [1, 2, 3, 4].
+let arr = [1, 2, 3, 4];
+let result = arr.reduce(function(total,num){
+    return total + num;
+});
+console.log(result)
+
