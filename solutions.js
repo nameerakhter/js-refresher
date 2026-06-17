@@ -399,3 +399,226 @@ newArr = arr.flat()
 console.log(arr)
 console.log(newArr)
 console.log('\n')
+
+
+let tempArr = [1, 2, 3, 4];
+tempArr.length = 0;
+console.log(tempArr); 
+console.log('\n')
+
+
+arr = new Array(5).fill(0);
+console.log(arr); 
+console.log('\n')
+
+let letters = ["a", "b", "c"];
+letters.forEach(item => {
+    console.log(item);
+});
+console.log('\n')
+
+str = "HELLO";
+let result = Array.from(str);
+console.log(result); 
+console.log('\n')
+
+const intern = { name: "Alex", role: "Developer" }
+console.log(intern.name)
+console.log('\n')
+
+console.log(intern["role"])
+console.log('\n')
+
+
+intern.age =22
+console.log(intern.age)
+console.log('\n')
+
+
+intern.role ="Junior Developer"
+console.log(intern.role)
+console.log('\n')
+
+delete intern.role;
+console.log(intern)
+console.log('\n')
+
+
+//Q80
+console.log("status" in intern)
+console.log('\n')
+
+console.log(intern.hasOwnProperty("name"))
+console.log('\n')
+
+
+arr = Object.keys(intern)
+console.log(arr)
+console.log('\n')
+
+arr = Object.values(intern)
+console.log(arr)
+console.log('\n')
+
+let obj1 = { a: 1 }
+let  obj2 = { b: 2 }
+Object.assign(obj1,obj2)
+console.log(obj1)
+console.log('\n')
+
+
+obj1 = { a: 1 };
+obj2 = { b: 2 };
+let obj3 ={ ...obj1, ...obj2};
+console.log(obj3)
+console.log('\n')
+
+
+let sealedObj={
+    name:"aditya",
+    age: 21,
+}
+Object.seal(sealedObj)
+console.log(Object.isSealed(sealedObj))
+console.log('\n')
+
+
+
+let frozenObj ={
+    name:"aditya",
+    age: 21,
+}
+Object.freeze(frozenObj)
+console.log(Object.isFrozen(frozenObj))
+console.log('\n')
+
+
+const user = { name: "John", age: 25 }
+let {name ,age}=user;
+console.log(name)
+console.log(age)
+console.log('\n')
+
+
+//Q90
+for(let i=0;i<5;i++)
+{
+    console.log(i);
+}
+console.log('\n')
+
+let i=0
+while(i<3)
+{
+   console.log(i);
+   i++;
+}
+console.log('\n')
+
+i=0;
+do{
+  console.log(i);
+   i++;
+}while(i<3);
+console.log('\n')
+
+
+arr=["apple", "pear"];
+for (const ar of arr)
+{
+   console.log(ar);
+}
+console.log('\n')
+
+
+obj1={ item: "book", price: 15 }
+for (const key in obj1)
+{
+    console.log(obj1[key])
+}
+console.log('\n')
+
+
+let num =22
+if(num>=0)
+{
+    console.log("positive")
+
+}
+else{
+    console.log("negative")
+}
+console.log('\n')
+
+
+let color ="red"
+switch(color)
+{
+  case "red":console.log("red")
+           break;
+  case "blue":console.log("blue")
+           break;
+};
+console.log('\n')
+
+
+for(let i=0;i<5;i++)
+{
+    if(i==3)
+    {
+        break;
+    }
+}
+console.log(i);
+console.log('\n')
+
+for(let i=0;i<5;i++)
+{
+    if(i==2)
+    {
+        continue;
+    }
+    console.log(i);
+}
+
+console.log('\n')
+
+
+
+function add(a,b)
+{
+    return a+b;
+}
+
+console.log(add(10,20));
+console.log('\n')
+
+a=10
+let b =20;
+const add1 = (a,b) => a+b;
+console.log(a+b);
+console.log('\n')
+
+
+function parameter(para)
+{
+  if(para === undefined)
+  {
+      return "welocme  guest"
+  }
+  else{
+     return `welcoem ${para}`
+  }
+}
+
+console.log(parameter())
+
+
+let value = undefined;
+console.log(value ?? "default-string");
+console.log()
+
+const user1 = {
+    name: "John"
+};
+console.log(user.profile?.bio ?? "No bio available");
