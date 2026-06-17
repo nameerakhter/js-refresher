@@ -455,4 +455,66 @@ for (let key in objj) {
   console.log(key);}
 
 //95. Write a standard if-else statement that logs "Positive" if a number is >= 0, and "Negative" otherwise.
+let numm1 = 5;
+if (numm1 >= 0) {
+  console.log("Positive");
+} else {
+  console.log("Negative");}
+
+//96. Convert that if-else block into a compact, single-line conditional Ternary operator expression.
+let numm2 = 5;
+let result4 = (numm2 >= 0) ? "Positive" : "Negative";
+console.log(result4);
+
+//97. Write a switch statement evaluating a variable color for the cases "red" and "blue"
+let color = "red";
+switch (color){
+    case "red":
+        console.log("color is red.");
+        break;
+    case "blue":
+        console.log("color is blue.");
+        break;
+    default:
+        console.log("don't know.")
+}
+
+//98. Use the break keyword inside a loop to stop execution the moment an index counter reaches 3.
+for (let i8 = 0; i8 < 10; i8++) {
+    console.log(i8);
+    if (i8 === 3) {
+        break;
+    }
+}
+
+//99. Use the continue keyword inside a loop to skip all code execution for index 2 and move directly to the next iteration loop.
+for (let ii = 0; ii < 5; ii++) {
+  if (ii === 2) {
+    continue;
+  }
+  console.log(ii);
+}
+
+//100. Write a traditional function declaration named add that returns the sum of parameters a and b.
+function add(o, p) {
+  return o + p;
+}
+
+//101. Convert that traditional add function into an ES6 Arrow Function assigned to a variable.
+const sumNumbers = (number1, number2) => {
+  return number1 + number2;
+};
+
+//102. Define a function parameter signature that provides a default string value of "Guest" if no argument is supplied.
+function greet(userName = "Guest") {
+  return `Hello, ${userName}`;
+}
+
+//103. Use the Logical Nullish Coalescing operator (??) to fallback to "default-string" if a variable is null or undefined.
+let valuee = null;
+let result8 = valuee ?? "default-string";
+console.log(result8);
+
+//104. Use Optional Chaining (?.) to safely log user.profile.bio without throwing an error if profile is missing.
+console.log(user?.profile?.bio);
 
