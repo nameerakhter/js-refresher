@@ -359,12 +359,12 @@ console.log(zeroArr);
  let charArr2 = ["a", "b", "c"];
 charArr2.forEach(function(item){
     console.log(item);
-}); 
+});
 
 //74. Convert the string `"HELLO"` into a true structural array of individual characters `['H', 'E', 'L', 'L', 'O']`.
 let str25 = "HELLO";
 let charArray = Array.from(str25);
-console.log(charArray); 
+console.log(charArray);
 
 //## Section 5: Objects & Property Manipulation
 
@@ -373,7 +373,7 @@ console.log(charArray);
 //75. Given `const intern = { name: "Alex", role: "Developer" };`, access `name` using dot notation.
 const intern = { name: "Alex", role: "Developer" };
 console.log(intern.name);
-console.log(intern.role);    
+console.log(intern.role);
 
 //76. Access the property `role` from that same object using dynamic bracket notation instead.
 console.log(intern["role"]);
@@ -396,7 +396,7 @@ console.log(hasStatus);
 
 //81. Write a statement to check if the object has the property `"name"` using `hasOwnProperty()`.
 let hasName = intern.hasOwnProperty("name");
-console.log(hasName);   
+console.log(hasName);
 
 //82. Generate an array containing all the keys of the object.
 let keysArray = Object.keys(intern);
@@ -450,14 +450,14 @@ let counter = 0;
 while(counter < 3){
     console.log(counter);
     counter++;
-}   
+}
 
 //92. Write a `do...while` loop structure.
 let count = 0;
 do {
     console.log(count);
     count++;
-} while (count < 3); 
+} while (count < 3);
 
 //93. Iterate over the elements of the array `["apple", "pear"]` using a `for...of` loop.
 let fruits13 = ["apple", "pear"];
@@ -474,11 +474,11 @@ let number = -5;
 if(number>=0){
     console.log("Positive");
 }else{
-    console.log("Negative");        
-}   
+    console.log("Negative");
+}
 //96. Convert that `if-else` block into a compact, single-line conditional Ternary operator expression.
 let result = number>=0? "+ve":"-ve";
-console.log(result);    
+console.log(result);
 
 //97. Write a `switch` statement evaluating a variable `color` for the cases `"red"` and `"blue"`.
 let color = "red";
@@ -491,7 +491,7 @@ switch(color){
         break;
     default:
         console.log("Color is neither red nor blue");
-}                            
+}
 
 //98. Use the `break` keyword inside a loop to stop execution the moment an index counter reaches `3`.
 for (let i = 0; i < 10; i++) {
@@ -499,42 +499,42 @@ for (let i = 0; i < 10; i++) {
         break;
     }
     console.log(i);
-}   
+}
 
 //99. Use the `continue` keyword inside a loop to skip all code execution for index `2` and move directly to the next iteration loop.
 for (let i = 0; i < 5; i++) {
     if (i === 2) {
         continue;
-    }   
+    }
     console.log(i);
-}   
+}
 
 //100.  Write a traditional function declaration named `add` that returns the sum of parameters `a` and `b`.
 let a = 20;
-let b = 10; 
+let b = 10;
 function add(a,b){
     return a+b;
-}   
+}
 let sum2 = add(a, b);
 console.log(sum2);
 
 //101.  Convert that traditional `add` function into an ES6 Arrow Function assigned to a variable.
 
-const addition = (a,b) => a+b;  
+const addition = (a,b) => a+b;
 let summation = addition(a, b);
-console.log(summation);  
-    
+console.log(summation);
+
 //102.  Define a function parameter signature that provides a default string value of `"Guest"` if no argument is supplied.
 function greet(name = "Guest"){
     return `Hello, ${name}!`;
 }
-console.log(greet());   
-       
+console.log(greet());
+
 //103.  Use the Logical Nullish Coalescing operator (`??`) to fallback to `"default-string"` if a variable is null or undefined.
 
-let myVariable = null; 
+let myVariable = null;
 let res_ult = myVariable ?? "default-string";
-console.log(res_ult); 
+console.log(res_ult);
 
 //104.  Use Optional Chaining (`?.`) to safely log `user.profile.bio` without throwing an error if `profile` is missing.
 let userrr = {
